@@ -1,9 +1,17 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+  import { ref, reactive } from 'vue';
 
-defineProps<{ msg: string }>()
+  interface Props {
+    msg?: string;
+    labels?: string[];
+  }
 
-const count = ref(0)
+  const props = withDefaults(defineProps<Props>(), {
+    msg: 'hello',
+    labels: () => ['one', 'two'],
+  });
+
+  const count = ref(0);
 </script>
 
 <template>
@@ -16,6 +24,4 @@ const count = ref(0)
   </nav>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
