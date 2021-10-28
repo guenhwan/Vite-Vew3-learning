@@ -8,36 +8,15 @@
   display: flex;
 }
 
-.logo-wrapper {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.logo-text,
-.logo-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.sidebar-body {
-  padding-top: 20px;
-}
-
-.sidebar-footer {
-}
-
 .main-wrapper {
   position: relative;
   width: 100%;
 }
 
 .main-nav--bg {
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: all 0.3s;
+  -moz-transition: width 0.35s ease;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   background-color: #fff;
 }
